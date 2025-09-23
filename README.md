@@ -2,6 +2,8 @@
 
 A modern React Native application for tracking cryptocurrency market data in real-time. Built with TypeScript and powered by the CoinGecko API.
 
+<img width="50%" height="2556" alt="Simulator Screenshot - iPhone 15 - 2025-09-23 at 19 35 16" src="https://github.com/user-attachments/assets/658c38ad-8d94-4569-9b27-2c904609dc98" />
+
 ## Features
 
 - 📊 **Real-time Market Data**: View current cryptocurrency prices and 24h changes
