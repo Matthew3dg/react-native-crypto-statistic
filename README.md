@@ -43,8 +43,8 @@ The app displays a clean list of cryptocurrencies with:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd ReactNativeCryptoTracker
+git clone https://github.com/Matthew3dg/react-native-crypto-statistic.git
+cd react-native-crypto-statistic
 ```
 
 2. Install dependencies:
