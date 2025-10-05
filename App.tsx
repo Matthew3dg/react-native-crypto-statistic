@@ -22,7 +22,7 @@ function App(): React.JSX.Element {
 }
 
 const styles = StyleSheet.create({
-  root: {flex: 1, backgroundColor: '#f9fafb'},
+  root: {flex: 1, backgroundColor: '#fff'},
 });
 
 export default App;
