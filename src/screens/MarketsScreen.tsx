@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   ActivityIndicator,
+  Pressable,
   RefreshControl,
   SafeAreaView,
   StyleSheet,
   Text,
-  TouchableOpacity,
   View,
 } from 'react-native';
 import Animated, {
@@ -60,7 +60,7 @@ export function MarketsScreen() {
           }
           ListFooterComponent={
             <View style={styles.pagination}>
-              <TouchableOpacity
+              <Pressable
                 style={[styles.button, page === 1 && styles.buttonDisabled]}
                 disabled={page === 1}
                 onPress={() => {
@@ -68,16 +68,16 @@ export function MarketsScreen() {
                   setPage(p => Math.max(1, p - 1));
                 }}>
                 <Text style={styles.buttonText}>Prev</Text>
-              </TouchableOpacity>
+              </Pressable>
               <Text style={styles.pageText}>Page {page}</Text>
-              <TouchableOpacity
+              <Pressable
                 style={styles.button}
                 onPress={() => {
                   setDirection('next');
                   setPage(p => p + 1);
                 }}>
                 <Text style={styles.buttonText}>Next</Text>
-              </TouchableOpacity>
+              </Pressable>
             </View>
           }
         />
