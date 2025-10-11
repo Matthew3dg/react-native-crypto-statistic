@@ -40,6 +40,7 @@ export function MarketsScreen() {
         </View>
       ) : (
         <Animated.FlatList
+          // extraData={page}
           key={page}
           style={styles.root}
           entering={
@@ -53,6 +54,11 @@ export function MarketsScreen() {
               : SlideOutRight.springify()
           }
           data={data}
+          getItemLayout={(_, index) => ({
+            length: 60,
+            offset: 60 * index,
+            index,
+          })}
           keyExtractor={item => item.id}
           renderItem={({item}) => <CoinRow coin={item} />}
           refreshControl={
